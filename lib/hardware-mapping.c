@@ -65,7 +65,29 @@ struct HardwareMapping matrix_hardware_mappings[] = {
     .p2_g2         = GPIO_BIT(16),
     .p2_b2         = GPIO_BIT(21),
   },
+  /*
+   * This is used if you have an Adafruit HAT in the default configuration
+   */
+  {
+    .name          = "adafruit-hat-fonak",
 
+    .output_enable = GPIO_BIT(4),
+    .clock         = GPIO_BIT(17),
+    .strobe        = GPIO_BIT(21),
+
+    .a             = GPIO_BIT(26),
+    .b             = GPIO_BIT(22),
+    .c             = GPIO_BIT(27),
+    .d             = GPIO_BIT(20),
+    .e             = GPIO_BIT(24),  /* Needs manual wiring, see README.md */
+
+    .p0_r1         = GPIO_BIT(5),
+    .p0_g1         = GPIO_BIT(13),
+    .p0_b1         = GPIO_BIT(6),
+    .p0_r2         = GPIO_BIT(12),
+    .p0_g2         = GPIO_BIT(16),
+    .p0_b2         = GPIO_BIT(23),
+  },
   /*
    * This is used if you have an Adafruit HAT in the default configuration
    */
